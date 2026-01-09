@@ -347,6 +347,11 @@ export const getPackageFileVersion = ({
               case "string":
                 return depDefinition;
               case "object":
+                // Cargo workspace dependencies use { workspace = true } without a version
+                // The version is inherited from the workspace root
+                if (depDefinition.workspace === true) {
+                  return depDefinition.version || "";
+                }
                 if (!depDefinition.version) {
                   throw new Error(
                     `${pkg.name} has a dependency on ${dep}, and ${dep} does not have a version number. ` +
