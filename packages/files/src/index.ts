@@ -352,6 +352,11 @@ export const getPackageFileVersion = ({
                 if (depDefinition.workspace === true) {
                   return depDefinition.version || "";
                 }
+                // Cargo path-only dependencies (e.g., { path = "../pkg" }) don't require a version
+                // for local development - covector should not error on these
+                if (depDefinition.path && !depDefinition.version) {
+                  return "";
+                }
                 if (!depDefinition.version) {
                   throw new Error(
                     `${pkg.name} has a dependency on ${dep}, and ${dep} does not have a version number. ` +
