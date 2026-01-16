@@ -1,5 +1,9 @@
 # Changelog
 
+## \[0.8.1-rc.0]
+
+- [`c7cda11`](https://www.github.com/fltsci/covector/commit/c7cda1138799e67c348a4534a0f1526fd9fd6223) Fix flaky curl test in CI by adding User-Agent header and more specific error detection
+
 ## \[0.8.0]
 
 ### Enhancements

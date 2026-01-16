@@ -1,4 +1,7 @@
 {
   "tag": "rc",
-  "changes": []
+  "changes": [
+    ".changes/cargo-workspace-deps.md",
+    ".changes/fix-flaky-curl-test.md"
+  ]
 }
