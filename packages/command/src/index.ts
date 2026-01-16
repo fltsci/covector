@@ -419,8 +419,8 @@ export const sh = function* (
     child = yield exec(command, options);
   }
 
-  // Use all() to ensure both stream handlers complete before continuing.
-  // Without this, spawned handlers can race with the next command's logging.
+  // Run stream handlers and expect() concurrently, waiting for all to complete.
+  // This ensures all output is captured before returning.
   const [, , result] = yield all([
     child.stderr.forEach((chunk: Buffer) => {
       out += chunk.toString();
@@ -434,6 +434,7 @@ export const sh = function* (
     }),
     child.expect(),
   ]);
+
   return { result, stdout, stderr, out: out.trim() };
 };
 
