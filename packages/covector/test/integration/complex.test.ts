@@ -9,9 +9,7 @@ import * as pinoTest from "pino-test";
 import path from "path";
 import * as fs from "fs";
 import fixtures from "fixturez";
-import os from "node:os";
 const f = fixtures(__dirname);
-const isWindows = os.platform() === "win32";
 
 describe("integration test for complex commands", () => {
   describe("prod", () => {
@@ -98,8 +96,7 @@ describe("integration test for complex commands", () => {
       expect(covectored).toMatchSnapshot();
     });
 
-    // Skip on Windows due to platform-specific npm output and slower execution
-    it.skipIf(isWindows)("runs test", function* () {
+    it("runs test", function* () {
       const stream = pinoTest.sink();
       const logger = pino(stream);
       const fullIntegration = f.copy("integration.js-with-complex-commands");
@@ -221,8 +218,7 @@ describe("integration test for complex commands", () => {
       expect(covectored).toMatchSnapshot();
     });
 
-    // Skip on Windows due to platform-specific npm output
-    it.skipIf(isWindows)("runs build", function* () {
+    it("runs build", function* () {
       const stream = pinoTest.sink();
       const logger = pino(stream);
       const fullIntegration = f.copy("integration.js-with-complex-commands");
