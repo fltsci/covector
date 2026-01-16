@@ -1,5 +1,12 @@
 # Changelog
 
+## \[0.12.5-rc.1]
+
+### Dependencies
+
+- Upgraded to `@fltsci/covector-command@0.8.1-rc.1`
+- Upgraded to `@fltsci/covector-assemble@0.12.1-rc.1`
+
 ## \[0.12.5-rc.0]
 
 ### Dependencies

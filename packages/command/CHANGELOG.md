@@ -1,5 +1,9 @@
 # Changelog
 
+## \[0.8.1-rc.1]
+
+- [`239e425`](https://www.github.com/fltsci/covector/commit/239e425047a1ba9c138d861630ca4143cd8aea15) ([#4](https://www.github.com/fltsci/covector/pull/4) by [@johncarmack1984](https://www.github.com/fltsci/covector/../../johncarmack1984)) Fix flaky test by using all() to await stream handlers before returning from sh()
+
 ## \[0.8.1-rc.0]
 
 - [`c7cda11`](https://www.github.com/fltsci/covector/commit/c7cda1138799e67c348a4534a0f1526fd9fd6223) Fix flaky curl test in CI by adding User-Agent header and more specific error detection

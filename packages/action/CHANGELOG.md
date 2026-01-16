@@ -1,5 +1,11 @@
 # Changelog
 
+## \[0.12.5-rc.1]
+
+### Dependencies
+
+- Upgraded to `@fltsci/covector@0.12.5-rc.1`
+
 ## \[0.12.5-rc.0]
 
 ### Dependencies
