@@ -1,5 +1,9 @@
 # Changelog
 
+## \[0.8.1-rc.0]
+
+- [`dfd3032`](https://www.github.com/fltsci/covector/commit/dfd30327448188bf2bcd23c485f55f92bc9da682) Add support for Cargo workspace dependencies ({ workspace = true }) and path-only dependencies ({ path = "../pkg" })
+
 ## \[0.8.0]
 
 ### Enhancements

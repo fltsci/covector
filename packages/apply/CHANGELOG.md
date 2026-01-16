@@ -1,5 +1,11 @@
 # Changelog
 
+## \[0.10.1-rc.0]
+
+### Dependencies
+
+- Upgraded to `@fltsci/covector-files@0.8.1-rc.0`
+
 ## \[0.10.0]
 
 ### Enhancements
