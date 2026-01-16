@@ -1,4 +1,5 @@
 import {
+  all,
   spawn,
   timeout,
   Operation,
@@ -418,23 +419,22 @@ export const sh = function* (
     child = yield exec(command, options);
   }
 
-  yield spawn(
+  // Run stream handlers and expect() concurrently, waiting for all to complete.
+  // This ensures all output is captured before returning.
+  const [, , result] = yield all([
     child.stderr.forEach((chunk: Buffer) => {
       out += chunk.toString();
       stderr += chunk.toString();
       if (log !== false) logger.info(chunk.toString().trim());
-    })
-  );
-
-  yield spawn(
+    }),
     child.stdout.forEach((chunk: Buffer) => {
       out += chunk.toString();
       stdout += chunk.toString();
       if (log !== false) logger.info(chunk.toString().trim());
-    })
-  );
+    }),
+    child.expect(),
+  ]);
 
-  const result = yield child.expect();
   return { result, stdout, stderr, out: out.trim() };
 };
 
