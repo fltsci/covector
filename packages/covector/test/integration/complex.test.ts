@@ -1,6 +1,6 @@
 import { covector } from "../../src";
-import { CovectorVersion } from "@covector/types";
-import { loadFile } from "@covector/files";
+import { CovectorVersion } from "@fltsci/covector-types";
+import { loadFile } from "@fltsci/covector-files";
 import { captureError, describe, it } from "../../../../helpers/test-scope.ts";
 import { expect } from "vitest";
 import { checksWithObject } from "../helpers.ts";

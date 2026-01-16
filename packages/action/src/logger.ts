@@ -1,7 +1,7 @@
 import build from "pino-abstract-transport";
 import yaml from "js-yaml";
 import * as core from "@actions/core";
-import type { LoggerBindings } from "@covector/types";
+import type { LoggerBindings } from "@fltsci/covector-types";
 
 const logLevel = {
   10: "trace",

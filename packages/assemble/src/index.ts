@@ -6,8 +6,8 @@ import stringify from "remark-stringify";
 import frontmatter from "remark-frontmatter";
 import yaml from "js-yaml";
 import { template, cloneDeep } from "lodash";
-import { readPkgFile } from "@covector/files";
-import { runCommand } from "@covector/command";
+import { readPkgFile } from "@fltsci/covector-files";
+import { runCommand } from "@fltsci/covector-command";
 
 import type {
   File,
@@ -25,7 +25,7 @@ import type {
   CommandTypes,
   PkgManagerConfig,
   Logger,
-} from "@covector/types";
+} from "@fltsci/covector-types";
 
 export const parseChange = function* ({
   logger,

@@ -1,10 +1,10 @@
 import { all, Operation } from "effection";
-import { readChangelog } from "@covector/files";
+import { readChangelog } from "@fltsci/covector-files";
 import unified from "unified";
 import parse from "remark-parse";
 import stringify from "remark-stringify";
 
-import type { File, ConfigFile, Changelog, Logger } from "@covector/types";
+import type { File, ConfigFile, Changelog, Logger } from "@fltsci/covector-types";
 
 export function* readAllChangelogs({
   logger,

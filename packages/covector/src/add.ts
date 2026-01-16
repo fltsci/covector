@@ -7,13 +7,13 @@ import {
   select,
   text,
 } from "@clack/prompts";
-import { type Logger } from "@covector/types";
+import { type Logger } from "@fltsci/covector-types";
 import { writeFile } from "fs/promises";
 import { existsSync } from "fs";
 import { join } from "path";
-import { configFile } from "@covector/files";
-import type { ConfigFile } from "@covector/types";
-import { sh } from "@covector/command";
+import { configFile } from "@fltsci/covector-files";
+import type { ConfigFile } from "@fltsci/covector-types";
+import { sh } from "@fltsci/covector-command";
 
 const exit = (value: any) => {
   if (isCancel(value)) {

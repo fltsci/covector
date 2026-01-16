@@ -1,27 +1,27 @@
-import { type Logger } from "@covector/types";
+import { type Logger } from "@fltsci/covector-types";
 import {
   attemptCommands,
   confirmCommandsToRun,
   raceTime,
-} from "@covector/command";
+} from "@fltsci/covector-command";
 import {
   configFile,
   readPreFile,
   changeFiles,
   loadChangeFiles,
-} from "@covector/files";
-import { assemble, mergeIntoConfig } from "@covector/assemble";
+} from "@fltsci/covector-files";
+import { assemble, mergeIntoConfig } from "@fltsci/covector-assemble";
 import {
   pullLastChangelog,
   pipeChangelogToCommands,
-} from "@covector/changelog";
+} from "@fltsci/covector-changelog";
 
 import type {
   CommandsRan,
   CovectorPublish,
   Covector,
   PkgPublish,
-} from "@covector/types";
+} from "@fltsci/covector-types";
 
 export function* publish({
   logger,

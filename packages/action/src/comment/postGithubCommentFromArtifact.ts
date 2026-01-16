@@ -5,7 +5,7 @@ import path from "node:path";
 import type { GitHub } from "@actions/github/lib/utils";
 import type { Operation } from "effection";
 import type { WorkflowRunEvent } from "@octokit/webhooks-definitions/schema";
-import type { Logger } from "@covector/types";
+import type { Logger } from "@fltsci/covector-types";
 
 export function* postGithubCommentFromArtifact({
   logger,

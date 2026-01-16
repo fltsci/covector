@@ -1,22 +1,22 @@
-import { type Logger } from "@covector/types";
-import { confirmCommandsToRun } from "@covector/command";
+import { type Logger } from "@fltsci/covector-types";
+import { confirmCommandsToRun } from "@fltsci/covector-command";
 import {
   configFile,
   readPreFile,
   changeFiles,
   loadChangeFiles,
   readAllPkgFiles,
-} from "@covector/files";
+} from "@fltsci/covector-files";
 import {
   assemble,
   mergeIntoConfig,
   mergeChangesToConfig,
-} from "@covector/assemble";
+} from "@fltsci/covector-assemble";
 import {
   apply,
   changesConsideringParents,
   validateApply,
-} from "@covector/apply";
+} from "@fltsci/covector-apply";
 import { cloneDeep } from "lodash";
 
 import type {
@@ -26,7 +26,7 @@ import type {
   PackageFile,
   PkgVersion,
   Config,
-} from "@covector/types";
+} from "@fltsci/covector-types";
 
 export function* status({
   logger,

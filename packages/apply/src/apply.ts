@@ -4,7 +4,7 @@ import {
   getPackageFileVersion,
   setPackageFileVersion,
   testSerializePkgFile,
-} from "@covector/files";
+} from "@fltsci/covector-files";
 import semver from "semver";
 
 import type {
@@ -15,7 +15,7 @@ import type {
   DepTypes,
   Pkg,
   Logger,
-} from "@covector/types";
+} from "@fltsci/covector-types";
 
 export function* apply({
   logger,

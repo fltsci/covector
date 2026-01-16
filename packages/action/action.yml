@@ -1,5 +1,5 @@
-name: "covector"
-description: "Sane change management in polyglot, monorepos, single"
+name: "covector (fltsci fork)"
+description: "Sane change management in polyglot, monorepos, single - fltsci fork with Rust workspace dependency support"
 inputs:
   command:
     description: covector cli command to run

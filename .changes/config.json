@@ -1,5 +1,5 @@
 {
-  "gitSiteUrl": "https://www.github.com/jbolda/covector/",
+  "gitSiteUrl": "https://www.github.com/fltsci/covector/",
   "additionalBumpTypes": ["housekeeping"],
   "changeTags": {
     "feat": "New Features",
@@ -45,7 +45,7 @@
     }
   },
   "packages": {
-    "covector": {
+    "@fltsci/covector": {
       "path": "./packages/covector",
       "manager": "javascript",
       "postpublish": [
@@ -61,86 +61,86 @@
         "git push --tags -f"
       ],
       "dependencies": [
-        "@covector/apply",
-        "@covector/assemble",
-        "@covector/files",
-        "@covector/changelog",
-        "@covector/command"
+        "@fltsci/covector-apply",
+        "@fltsci/covector-assemble",
+        "@fltsci/covector-files",
+        "@fltsci/covector-changelog",
+        "@fltsci/covector-command"
       ],
       "assets": [
         {
-          "path": "./packages/covector/covector-${ pkgFile.version }.tgz",
-          "name": "covector-${ pkgFile.version }.tgz"
+          "path": "./packages/covector/fltsci-covector-${ pkgFile.version }.tgz",
+          "name": "fltsci-covector-${ pkgFile.version }.tgz"
         }
       ]
     },
-    "@covector/apply": {
+    "@fltsci/covector-apply": {
       "path": "./packages/apply",
       "manager": "javascript",
-      "dependencies": ["@covector/files"],
+      "dependencies": ["@fltsci/covector-files"],
       "assets": [
         {
-          "path": "./packages/apply/covector-apply-${ pkgFile.version }.tgz",
-          "name": "covector-apply-${ pkgFile.version }.tgz"
+          "path": "./packages/apply/fltsci-covector-apply-${ pkgFile.version }.tgz",
+          "name": "fltsci-covector-apply-${ pkgFile.version }.tgz"
         }
       ]
     },
-    "@covector/assemble": {
+    "@fltsci/covector-assemble": {
       "path": "./packages/assemble",
       "manager": "javascript",
-      "dependencies": ["@covector/command", "@covector/files"],
+      "dependencies": ["@fltsci/covector-command", "@fltsci/covector-files"],
       "assets": [
         {
-          "path": "./packages/assemble/covector-assemble-${ pkgFile.version }.tgz",
-          "name": "covector-assemble-${ pkgFile.version }.tgz"
+          "path": "./packages/assemble/fltsci-covector-assemble-${ pkgFile.version }.tgz",
+          "name": "fltsci-covector-assemble-${ pkgFile.version }.tgz"
         }
       ]
     },
-    "@covector/changelog": {
+    "@fltsci/covector-changelog": {
       "path": "./packages/changelog",
       "manager": "javascript",
-      "dependencies": ["@covector/files"],
+      "dependencies": ["@fltsci/covector-files"],
       "assets": [
         {
-          "path": "./packages/changelog/covector-changelog-${ pkgFile.version }.tgz",
-          "name": "covector-changelog-${ pkgFile.version }.tgz"
+          "path": "./packages/changelog/fltsci-covector-changelog-${ pkgFile.version }.tgz",
+          "name": "fltsci-covector-changelog-${ pkgFile.version }.tgz"
         }
       ]
     },
-    "@covector/files": {
+    "@fltsci/covector-files": {
       "path": "./packages/files",
       "manager": "javascript",
-      "dependencies": ["@covector/toml"],
+      "dependencies": ["@fltsci/covector-toml"],
       "assets": [
         {
-          "path": "./packages/files/covector-files-${ pkgFile.version }.tgz",
-          "name": "covector-files-${ pkgFile.version }.tgz"
+          "path": "./packages/files/fltsci-covector-files-${ pkgFile.version }.tgz",
+          "name": "fltsci-covector-files-${ pkgFile.version }.tgz"
         }
       ]
     },
-    "@covector/command": {
+    "@fltsci/covector-command": {
       "path": "./packages/command",
       "manager": "javascript",
       "dependencies": [],
       "assets": [
         {
-          "path": "./packages/command/covector-command-${ pkgFile.version }.tgz",
-          "name": "covector-command-${ pkgFile.version }.tgz"
+          "path": "./packages/command/fltsci-covector-command-${ pkgFile.version }.tgz",
+          "name": "fltsci-covector-command-${ pkgFile.version }.tgz"
         }
       ]
     },
-    "@covector/toml": {
+    "@fltsci/covector-toml": {
       "path": "./packages/toml",
       "manager": "javascript",
       "dependencies": [],
       "assets": [
         {
-          "path": "./packages/toml/covector-toml-${ pkgFile.version }.tgz",
-          "name": "covector-toml-${ pkgFile.version }.tgz"
+          "path": "./packages/toml/fltsci-covector-toml-${ pkgFile.version }.tgz",
+          "name": "fltsci-covector-toml-${ pkgFile.version }.tgz"
         }
       ]
     },
-    "@covector/types": {
+    "@fltsci/covector-types": {
       "path": "./packages/types",
       "manager": "javascript",
       "version": false,
@@ -152,7 +152,7 @@
       "preversion": "npm run pkg",
       "publish": false,
       "getPublishedVersion": false,
-      "dependencies": ["covector"],
+      "dependencies": ["@fltsci/covector"],
       "assets": false
     }
   }

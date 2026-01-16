@@ -1,12 +1,12 @@
 {
-  "name": "@covector/changelog",
+  "name": "@fltsci/covector-changelog",
   "version": "0.12.0",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/jbolda/covector#readme",
+  "homepage": "https://github.com/fltsci/covector#readme",
   "author": "Jacob Bolda <me@jacobbolda.com> (https://www.jacobbolda.com/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbolda/covector.git"
+    "url": "https://github.com/fltsci/covector.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@covector/files": "0.8.0",
+    "@fltsci/covector-files": "0.8.0",
     "effection": "^2.0.6",
     "lodash": "^4.17.21",
     "remark-parse": "^9.0.0",
@@ -29,7 +29,7 @@
     "unified": "^9.2.1"
   },
   "devDependencies": {
-    "@covector/types": "0.0.0",
+    "@fltsci/covector-types": "0.0.0",
     "@types/lodash": "^4.14.196"
   },
   "volta": {

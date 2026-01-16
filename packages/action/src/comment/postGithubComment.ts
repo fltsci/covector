@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import type { GitHub } from "@actions/github/lib/utils";
 import { Operation } from "effection";
-import { Logger } from "@covector/types";
+import { Logger } from "@fltsci/covector-types";
 
 export function* postGithubComment({
   logger,

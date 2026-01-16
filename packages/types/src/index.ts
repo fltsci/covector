@@ -5,8 +5,8 @@ import {
   allCommandsSchema,
   pkgManagerSchema,
   configFileSchema,
-} from "@covector/files/src/schema";
-import { TomlDocument } from "@covector/toml";
+} from "@fltsci/covector-files/src/schema";
+import { TomlDocument } from "@fltsci/covector-toml";
 import { Operation } from "effection";
 
 export type File = z.infer<typeof fileSchema>;
@@ -23,7 +23,7 @@ export interface LoggerBindings {
   renderAsYAML?: Record<string, any>;
 }
 
-/* @covector/files */
+/* @fltsci/covector-files */
 interface NestedVersion {
   version?: string;
   [key: string]: any;
@@ -87,7 +87,7 @@ export interface PreFile {
   changes: string[] | [];
 }
 
-/* @covector/command */
+/* @fltsci/covector-command */
 export type BuiltInCommands = "fetch:check";
 export type BuiltInCommandOptions = Record<string, any>;
 
@@ -110,7 +110,7 @@ export type NormalizedCommand = {
   pipe?: boolean;
 };
 
-/* @covector/changelog */
+/* @fltsci/covector-changelog */
 export type Changelog = {
   changes: { name: string; version: string };
   changelog: File;
@@ -148,7 +148,7 @@ export type AssembledChanges = {
   meta?: Meta;
 };
 
-/* @covector/assemble */
+/* @fltsci/covector-assemble */
 export type Changeset = {
   releases?: { [k: string]: CommonBumps } | {};
   tag?: string;
@@ -227,7 +227,7 @@ export type PipePublishTemplate = {
   pkgFile?: PackageFile;
 };
 
-/* @covector/apply */
+/* @fltsci/covector-apply */
 export type ChangeParsed = {
   releases: { [k: string]: string };
   tag?: string;

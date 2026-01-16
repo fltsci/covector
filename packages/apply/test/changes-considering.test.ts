@@ -1,6 +1,6 @@
 import { changesConsideringParents } from "../src";
-import { PackageFile, CommonBumps } from "@covector/types";
-import type { ConfigFile, PackageConfig } from "@covector/types";
+import { PackageFile, CommonBumps } from "@fltsci/covector-types";
+import type { ConfigFile, PackageConfig } from "@fltsci/covector-types";
 import { describe, it } from "../../../helpers/test-scope.ts";
 import { expect } from "vitest";
 

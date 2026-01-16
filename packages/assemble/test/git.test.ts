@@ -5,7 +5,7 @@ import pino from "pino";
 import * as pinoTest from "pino-test";
 import { join } from "path";
 
-import type { File } from "@covector/types";
+import type { File } from "@fltsci/covector-types";
 
 describe("git parsing", () => {
   it("parses and returns multiple commits", function* () {

@@ -1,5 +1,5 @@
 import { covector } from "../../src";
-import { TomlDocument } from "@covector/toml";
+import { TomlDocument } from "@fltsci/covector-toml";
 import { describe, it } from "../../../../helpers/test-scope.ts";
 import { expect } from "vitest";
 import pino from "pino";

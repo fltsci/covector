@@ -1,4 +1,4 @@
-import { loadFile } from "@covector/files";
+import { loadFile } from "@fltsci/covector-files";
 import { describe, it } from "../../../../helpers/test-scope.ts";
 import { expect } from "vitest";
 import { command, runCommand } from "../helpers";

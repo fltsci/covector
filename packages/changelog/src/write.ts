@@ -1,7 +1,7 @@
 import { all, Operation } from "effection";
-import { writeChangelog } from "@covector/files";
+import { writeChangelog } from "@fltsci/covector-files";
 
-import type { File } from "@covector/types";
+import type { File } from "@fltsci/covector-types";
 
 export function* writeAllChangelogs({
   writtenChanges,

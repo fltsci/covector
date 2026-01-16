@@ -5,7 +5,7 @@ import type {
   Releases,
   PackageFile,
   DepsKeyed,
-} from "@covector/types";
+} from "@fltsci/covector-types";
 
 const resolveParents = ({
   config,

@@ -1,6 +1,6 @@
 import { apply } from "../src";
-import { CommonBumps } from "@covector/types";
-import { loadFile, readAllPkgFiles } from "@covector/files";
+import { CommonBumps } from "@fltsci/covector-types";
+import { loadFile, readAllPkgFiles } from "@fltsci/covector-files";
 import { describe, it, captureError } from "../../../helpers/test-scope.ts";
 import { expect } from "vitest";
 import pino from "pino";

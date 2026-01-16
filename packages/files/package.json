@@ -1,12 +1,12 @@
 {
-  "name": "@covector/files",
+  "name": "@fltsci/covector-files",
   "version": "0.8.0",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/jbolda/covector#readme",
+  "homepage": "https://github.com/fltsci/covector#readme",
   "author": "Jacob Bolda <me@jacobbolda.com> (https://www.jacobbolda.com/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbolda/covector.git"
+    "url": "https://github.com/fltsci/covector.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@covector/toml": "0.2.0",
+    "@fltsci/covector-toml": "0.2.0",
     "globby": "^11.1.0",
     "js-yaml": "^4.1.0",
     "semver": "^7.5.4",
@@ -29,7 +29,7 @@
     "zod-validation-error": "^1.3.1"
   },
   "devDependencies": {
-    "@covector/types": "0.0.0",
+    "@fltsci/covector-types": "0.0.0",
     "@types/js-yaml": "^4.0.5",
     "@types/semver": "^7.3.13"
   },

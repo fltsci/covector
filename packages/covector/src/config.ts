@@ -1,7 +1,7 @@
-import { type Logger } from "@covector/types";
-import { configFile } from "@covector/files";
+import { type Logger } from "@fltsci/covector-types";
+import { configFile } from "@fltsci/covector-files";
 
-import type { Covector } from "@covector/types";
+import type { Covector } from "@fltsci/covector-types";
 
 export function* config({
   logger,

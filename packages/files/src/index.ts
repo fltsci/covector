@@ -2,13 +2,13 @@ import { default as fsDefault, PathLike } from "fs";
 // this is compatible with node@12+
 const fs = fsDefault.promises;
 
-import { type Logger } from "@covector/types";
+import { type Logger } from "@fltsci/covector-types";
 import { all, MainError, type Operation } from "effection";
 import { configFileSchema } from "./schema";
 import { fromZodError } from "zod-validation-error";
 import globby from "globby";
 import path from "path";
-import { TomlDocument } from "@covector/toml";
+import { TomlDocument } from "@fltsci/covector-toml";
 import yaml from "js-yaml";
 import semver from "semver";
 
@@ -21,7 +21,7 @@ import type {
   DepsKeyed,
   DepTypes,
   Pkg,
-} from "@covector/types";
+} from "@fltsci/covector-types";
 
 export function* loadFile(file: PathLike, cwd: string): Operation<File | void> {
   if (typeof file === "string") {

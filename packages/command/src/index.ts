@@ -20,7 +20,7 @@ import type {
   BuiltInCommands,
   BuiltInCommandOptions,
   Logger,
-} from "@covector/types";
+} from "@fltsci/covector-types";
 
 export const attemptCommands = function* ({
   logger,

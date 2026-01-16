@@ -13,7 +13,7 @@ import type {
   Meta,
   ChangeContext,
   Logger,
-} from "@covector/types";
+} from "@fltsci/covector-types";
 
 export { pullLastChangelog } from "./get";
 

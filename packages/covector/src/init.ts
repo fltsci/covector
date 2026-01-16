@@ -4,9 +4,9 @@ import * as fs from "fs/promises";
 import type { Dir } from "fs";
 import path from "path";
 import { Operation, all } from "effection";
-import { readPkgFile } from "@covector/files";
-import type { PackageFile } from "@covector/types";
-import { type Logger } from "@covector/types";
+import { readPkgFile } from "@fltsci/covector-files";
+import type { PackageFile } from "@fltsci/covector-types";
+import { type Logger } from "@fltsci/covector-types";
 
 export const init = function* init({
   logger,

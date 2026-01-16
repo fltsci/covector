@@ -1,5 +1,5 @@
-import { type Logger } from "@covector/types";
-import { attemptCommands, raceTime } from "@covector/command";
+import { type Logger } from "@fltsci/covector-types";
+import { attemptCommands, raceTime } from "@fltsci/covector-command";
 import {
   configFile,
   readPreFile,
@@ -8,10 +8,10 @@ import {
   changeFilesRemove,
   writePreFile,
   readAllPkgFiles,
-} from "@covector/files";
-import { assemble, mergeChangesToConfig } from "@covector/assemble";
-import { fillChangelogs } from "@covector/changelog";
-import { apply, changesConsideringParents } from "@covector/apply";
+} from "@fltsci/covector-files";
+import { assemble, mergeChangesToConfig } from "@fltsci/covector-assemble";
+import { fillChangelogs } from "@fltsci/covector-changelog";
+import { apply, changesConsideringParents } from "@fltsci/covector-apply";
 
 import type {
   CommandsRan,
@@ -20,7 +20,7 @@ import type {
   PkgVersion,
   PackageFile,
   ChangeContext,
-} from "@covector/types";
+} from "@fltsci/covector-types";
 import { Operation } from "effection";
 
 export function* version({

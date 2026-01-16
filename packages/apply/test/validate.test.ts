@@ -1,6 +1,6 @@
 import { validateApply } from "../src";
-import { readAllPkgFiles } from "@covector/files";
-import { PackageCommand, PackageFile } from "@covector/types";
+import { readAllPkgFiles } from "@fltsci/covector-files";
+import { PackageCommand, PackageFile } from "@fltsci/covector-types";
 
 import { run } from "effection";
 

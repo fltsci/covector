@@ -1,12 +1,12 @@
 {
-  "name": "@covector/command",
+  "name": "@fltsci/covector-command",
   "version": "0.8.0",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/jbolda/covector#readme",
+  "homepage": "https://github.com/fltsci/covector#readme",
   "author": "Jacob Bolda <me@jacobbolda.com> (https://www.jacobbolda.com/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbolda/covector.git"
+    "url": "https://github.com/fltsci/covector.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,7 +25,7 @@
     "effection": "^2.0.6"
   },
   "devDependencies": {
-    "@covector/types": "0.0.0"
+    "@fltsci/covector-types": "0.0.0"
   },
   "volta": {
     "extends": "../../package.json"

@@ -1,5 +1,5 @@
 import { apply } from "../src";
-import { loadFile, readAllPkgFiles } from "@covector/files";
+import { loadFile, readAllPkgFiles } from "@fltsci/covector-files";
 import { describe, it } from "../../../helpers/test-scope.ts";
 import { expect } from "vitest";
 import pino from "pino";

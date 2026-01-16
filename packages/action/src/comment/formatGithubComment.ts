@@ -1,4 +1,4 @@
-import type { Config, CovectorStatus, PackageFile } from "@covector/types";
+import type { Config, CovectorStatus, PackageFile } from "@fltsci/covector-types";
 import type { PullRequestEvent } from "@octokit/webhooks-definitions/schema";
 
 export function formatComment({
