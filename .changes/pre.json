@@ -2,6 +2,7 @@
   "tag": "rc",
   "changes": [
     ".changes/cargo-workspace-deps.md",
-    ".changes/fix-flaky-curl-test.md"
+    ".changes/fix-flaky-curl-test.md",
+    ".changes/fix-flaky-stream-handler-test.md"
   ]
 }

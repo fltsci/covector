@@ -1,6 +1,6 @@
 {
   "name": "@fltsci/covector",
-  "version": "0.12.5-rc.0",
+  "version": "0.12.5-rc.1",
   "license": "Apache-2.0",
   "homepage": "https://github.com/fltsci/covector#readme",
   "author": "Jacob Bolda <me@jacobbolda.com> (https://www.jacobbolda.com/)",
@@ -33,9 +33,9 @@
   "dependencies": {
     "@clack/prompts": "^0.7.0",
     "@fltsci/covector-apply": "0.10.1-rc.0",
-    "@fltsci/covector-assemble": "0.12.1-rc.0",
+    "@fltsci/covector-assemble": "0.12.1-rc.1",
     "@fltsci/covector-changelog": "0.12.1-rc.0",
-    "@fltsci/covector-command": "0.8.1-rc.0",
+    "@fltsci/covector-command": "0.8.1-rc.1",
     "@fltsci/covector-files": "0.8.1-rc.0",
     "effection": "^2.0.6",
     "globby": "^11.1.0",
