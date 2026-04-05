@@ -441,7 +441,7 @@ jobs:
           fetch-depth: 0 # required for use of git history${
             pkgManagers.javascript
               ? `
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           registry-url: 'https://registry.npmjs.org'`
               : ""
