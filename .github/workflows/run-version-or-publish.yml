@@ -18,11 +18,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - uses: volta-cli/action@v4
-      - uses: actions/setup-node@v3
+      - uses: volta-cli/action@v5
+      - uses: actions/setup-node@v6
         with:
           registry-url: "https://registry.npmjs.org"
       - name: git config
@@ -57,7 +57,7 @@ jobs:
           dryRun: true
       - name: create pull request
         id: cpr
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         if: steps.covector.outputs.commandRan == 'version'
         with:
           title: "Publish New Versions"
@@ -65,3 +65,4 @@ jobs:
           labels: "version updates, preview"
           branch: "release"
           body: ${{ steps.covector.outputs.change }}
+          delete-branch: true

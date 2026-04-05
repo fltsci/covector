@@ -15,15 +15,15 @@ inputs:
   dryRun:
     description: Run in dry-run mode which skips executing steps, and instead logs. Useful for testing a publish beforehand.
     required: false
-    defaults: false
+    default: "false"
   createRelease:
     description: Opt-in to create a release on publish
     required: false
-    default: false
+    default: "false"
   draftRelease:
     description: When creating a release, set it as a draft.
     required: false
-    default: false
+    default: "false"
   filterPackages:
     description: A comma separated list (no spaces) of packages to run commands on rather than everything listed in the config.
     required: false
@@ -31,11 +31,11 @@ inputs:
   comment:
     description: Include a comment on the pull request including context around the comment run
     required: false
-    defaults: false
+    default: "false"
   recognizeContributors:
     description: Include contributor and reviewer names within changelog
     required: false
-    defaults: false
+    default: "false"
   label:
     description: "the Github pull request label that triggers preview packages"
     required: false
@@ -70,7 +70,7 @@ outputs:
   releaseId:
     description: The ID of the created release. Only present when `createRelease` is set to true.
 runs:
-  using: "node20"
+  using: "node24"
   main: "dist/index.js"
 branding:
   icon: "sliders"
