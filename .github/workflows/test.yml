@@ -18,7 +18,7 @@ jobs:
         with:
           # some of the tests use the covector git history to run
           fetch-depth: 0
-      - uses: volta-cli/action@v4
+      - uses: volta-cli/action@v5
       - run: npm ci
       - run: npm run build # covector CLI tests run built files
       - run: npm test
